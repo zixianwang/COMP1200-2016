@@ -348,9 +348,41 @@ public class Main {
 }
 ----
 
-Truth tables, logic expressions, Venn diagrams, logic circuits, function tables, MUX and ROM configurations can represent logic functions.
+== January 8 
 
-image:http://lawrancej.github.io/COMP278-2014/images/logic-representations.svg[Representations of NAND]
+=== Install Git and frontends
+
+Windows:: https://git-scm.com/download/win[Install Git for Windows]
++
+https://github.com/gitextensions/gitextensions/releases/latest[Install Git Extensions]
++
+NOTE: Select KDiff, and *choose OpenSSH* (not PuTTY); otherwise,
+stick to the default settings.
++
+image:http://lawrancej.github.io/starterupper/images/what2install.png[Install KDiff]
+image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
+
+Mac OS X:: http://git-scm.com/download/mac[Install git from here]
++
+http://rowanj.github.io/gitx/[Install GitX-dev]
+
+Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
++
+NOTE: Don't forget to use +sudo+ with your package manager.
+
+=== Run starterupper
+
+Starterupper sets up git and project hosting for this class;
+it is safe to run even if you already have git and SSH keys set up on your machine.
+
+Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
+Press `Shift-Insert` to paste in Git Bash.
+
+----
+curl https://raw.githubusercontent.com/lawrancej/COMP1200-2016/master/main.sh | bash
+----
+
+== January 11
 
 === Boolean constants
 Remember: 0 is false, and 1 is true. Never mix these up.
@@ -546,34 +578,3 @@ Study this function table carefully in relation to the truth table above.
 We shrank down a truth table without losing information by noticing that a &oplus; b
 is the same as b if a is false, and a &oplus; b is the inverse of b if a is true.
 
-=== Install Git and frontends
-
-Windows:: https://git-scm.com/download/win[Install Git for Windows]
-+
-https://github.com/gitextensions/gitextensions/releases/latest[Install Git Extensions]
-+
-NOTE: Select KDiff, and *choose OpenSSH* (not PuTTY); otherwise,
-stick to the default settings.
-+
-image:http://lawrancej.github.io/starterupper/images/what2install.png[Install KDiff]
-image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
-
-Mac OS X:: http://git-scm.com/download/mac[Install git from here]
-+
-http://rowanj.github.io/gitx/[Install GitX-dev]
-
-Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
-+
-NOTE: Don't forget to use +sudo+ with your package manager.
-
-=== Run starterupper
-
-Starterupper sets up git and project hosting for this class;
-it is safe to run even if you already have git and SSH keys set up on your machine.
-
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
-Press `Shift-Insert` to paste in Git Bash.
-
-----
-curl https://raw.githubusercontent.com/lawrancej/COMP1200-2016/master/main.sh | bash
-----

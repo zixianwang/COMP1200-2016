@@ -364,6 +364,8 @@ image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
 
 Mac OS X:: http://git-scm.com/download/mac[Install git from here]
 +
+You may need to go to Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway if you get an error.
++
 http://rowanj.github.io/gitx/[Install GitX-dev]
 
 Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
@@ -375,7 +377,7 @@ NOTE: Don't forget to use +sudo+ with your package manager.
 Starterupper sets up git and project hosting for this class;
 it is safe to run even if you already have git and SSH keys set up on your machine.
 
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
+Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below. To get into terminal on the Mac, it's Finder -> Applications -> Utilities -> Terminal.
 Press `Shift-Insert` to paste in Git Bash.
 
 ----

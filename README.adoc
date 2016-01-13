@@ -1,5 +1,9 @@
 = COMP1200: Computer Organization
 
+== Resources
+
+* http://sourceforge.net/projects/circuit/files/latest/download[Download Logisim]
+
 == January 6
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Introduce yourself, About this course]

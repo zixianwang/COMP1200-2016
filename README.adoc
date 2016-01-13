@@ -8,7 +8,7 @@ NOTE: For the folks on Mac, open Terminal (Applications -> Utilities -> Terminal
 
 ----
 cd ~/Downloads
-java Logisim.app/Contents/Resources/Java/logisim.jar
+java -jar Logisim.app/Contents/Resources/Java/logisim.jar
 ----
 
 == January 6

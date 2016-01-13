@@ -16,3 +16,7 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 0: Setup Git]
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Logic expressions, truth tables]
 
+== January 13
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra, Gray codes, K-Maps]
+

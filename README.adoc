@@ -4,6 +4,13 @@
 
 * http://sourceforge.net/projects/circuit/files/latest/download[Download Logisim]
 
+NOTE: For the folks on Mac, open Terminal (Applications -> Utilities -> Terminal)
+
+----
+cd ~/Downloads
+java Logisim.app/Contents/Resources/Java/logisim.jar
+----
+
 == January 6
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Introduce yourself, About this course]

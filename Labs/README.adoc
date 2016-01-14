@@ -91,7 +91,7 @@ Find the dual form.
 Stage -> Commit -> Push
 
 ----
-cd ~/COMP2270-2015
+cd ~/COMP1200-2016
 touch lab1.txt
 git add lab1.txt
 git commit -m "Added lab 1 solution."

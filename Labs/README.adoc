@@ -42,7 +42,7 @@ Lab 1. *Due*: By next Thursday.
 Save your work in a file called `lab1.txt` in your repo.
 
 ----
-cd ~/COMP2270-2015
+cd ~/COMP1200-2016
 touch lab1.txt
 ----
 

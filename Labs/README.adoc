@@ -35,3 +35,65 @@ Press `Shift-Insert` to paste in Git Bash.
 ----
 curl https://raw.githubusercontent.com/lawrancej/COMP1200-2016/master/main.sh | bash
 ----
+
+== Lab 1: Discrete math review?
+
+Lab 1. *Due*: By next Thursday.
+Save your work in a file called `lab1.txt` in your repo.
+
+----
+cd ~/COMP2270-2015
+touch lab1.txt
+----
+
+NOTE: Use
+http://notepad-plus-plus.org/download/v6.6.9.html[a proper text editor],
+https://atom.io[such as this].
+
+=== Number representation
+
+. Convert 1590 to binary.
+. Convert 0b101110110 to decimal.
+. Convert 0b1100 0000 0001 1010 0001 0101 1011 1010 1101 to hexadecimal.
+. Convert 0b100 001 101 101 to octal.
+. Convert 0o31337 to binary.
+. Convert 0xBADF00D to binary and then to octal.
+. Convert 0o6157 to binary and then to decimal.
+. Convert 497 to binary. Then, use two's complement to convert 497 to -497 in binary.
+. Convert 900.79 to binary up to the 1/16ths spot.
+. Count from 0 through 10 in ternary (base 3). Note: the algorithm for counting is similar regardless of the number base. Show the place values.
+
+=== Circuit design
+
+. Let A and B be two 2-bit binary numbers (i.e., A1 A0 and B1 B0). Write out a truth table for A less than or equal to B. For example, 0b10 is less than or equal to 0b11, so the output for that row should be true.
+. Write out the equivalent logic expression for the previous answer.
+. Write out the truth table for the minority circuit (it's true when the minority of X, Y, and Z are true).
+. Write out the equivalent logic expression for the previous answer.
+
+=== Boolean algebra
+
+Use the laws of Boolean algebra.
+
+. Show c + (b * c)' = 1
+. Show (a + c) * (a * d + a * d') + a * c + c = a + c
+. Simplify a' * (a + b) + (b + a * a) * (a + b')
+. Show (a' * b') + (a' * b) + (a * b') = (a * b)'
+
+=== Dual form
+
+Find the dual form.
+
+. (a + b)' + c * a' + 1
+. 1 + 1 * 0'
+
+=== How to submit work
+
+Stage -> Commit -> Push
+
+----
+cd ~/COMP2270-2015
+touch lab1.txt
+git add lab1.txt
+git commit -m "Added lab 1 solution."
+git push origin master
+----

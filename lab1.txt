@@ -1,0 +1,106 @@
+Number representation
+1. 11000110110
+2. 374
+3. c01a15bad
+4. 4155
+5. 11001011011111
+6. 135337015
+7. 3183
+8. 1000001111
+9. 
+10. 0,1,2,10,11,12,20,21,22,100,101
+
+Circuit design
+1.
+	A1	A0	B1	B2	A<=B
+	0	0	0	0	1
+	0	0	0	1	1
+	0	0	1	0	1
+	0	0	1	1	1
+	0	1	0	0	0
+	0	1	0	1	1
+	0	1	1	0	1
+	0	1	1	1	1
+	1	0	0	0	0
+	1	0	0	1	0
+	1	0	1	0	1
+	1	0	1	1	1
+	1	1	0	0	0
+	1	1	0	1	0
+	1	1	1	0	0
+	1	1	1	1	1
+2.
+	0000 = NOTA1 AND NOTA0 AND NOTB1 AND NOTB2	
+	0001 = NOTA1 AND NOTA0 AND NOTB1 AND B2
+	0010 = NOTA1 AND NOTA0 AND B1 AND NOTB2
+	0011 = NOTA1 AND NOTA0 AND B1 AND B2
+	0101 = NOTA1 AND A0 AND NOTB1 AND B2
+	0110 = NOTA1 AND A0 AND B1 AND NOTB2
+	0111 = NOTA1 AND A0 AND B1 AND B2
+	1010 = A1 AND NOTA0 AND B1 AND NOTB2
+	1011 = A1 AND NOTA0 AND B1 AND B2
+	1111 = A1 AND A0 AND B1 AND B2
+3.
+	X	Y	Z	Most inputs false?
+	0	0	0	1	
+	0	0	1	1
+	0	1	0	1
+	0	1	1	0
+	1	0	0	1
+	1	0	1	0
+	1	1	0	0
+	1	1	1	0
+4.
+	000 = NOTX AND NOTY AND NOTZ
+	001 = NOTX AND NOTY AND Z
+	010 = NOTX AND Y AND NOTZ
+	100 = X AND NOTY AND NOTZ
+
+Boolean algebra
+
+1. 
+	c+(b*c)'=1
+	c+b'+c'=1
+	c+c'+b'=1
+	1+b'=1
+	1=1 
+
+2.
+	(a+c)*(a*d+a*d')+a*c+c=a+c
+	(a+c)*a*(d+d')+a*c+c=a+c
+	(a+c)*a*1+a*c+c
+	(a+c)*a+a*c+c
+	(a+c)=(a+c)
+
+3.
+	 a'*(a+b)+(b+a*a)*(a+b')
+	=a'*(a+b)+(a+b)*(a+b')
+	=(a'*a)+(a'+b)+(a+b)*(a+b')
+	=(a'+b)+(a+b)*(a+b')
+
+4.
+	(a' * b') + (a' * b) + (a * b') = (a * b)'
+	a'*(b'+b)+b'*(a'+a)=(a*b)'
+	a'*1+b'*1=(a*b)'
+	a'+b'=(a*b)'
+	(a*b)'=(a*b)'
+
+
+Dual form
+
+1.
+	(a + b)' + c * a' + 1
+	= (a * b)' * (c + a') * 0
+
+2.
+	1 + 1 * 0'
+	= 0 * (0 + 1')
+
+
+
+
+
+
+
+
+

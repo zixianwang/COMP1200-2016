@@ -111,3 +111,14 @@ The circuits:
 . Let A and B be two 2-bit binary numbers (i.e., A1 A0 and B1 B0). Write out a truth table for A less than or equal to B. For example, 0b10 is less than or equal to 0b11, so the output for that row should be true.
 
 . Minority circuit (it's true when the minority of X, Y, and Z are true).
+
+Save your work in the `COMP1200-2016/Labs/lab2.circ`.
+
+=== Submission
+
+----
+cd ~/COMP1200-2016/Labs
+git add lab2.circ
+git commit -m "Lab 2 done"
+git push origin master
+----

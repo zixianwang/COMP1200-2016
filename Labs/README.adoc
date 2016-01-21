@@ -112,7 +112,7 @@ The circuits:
 
 . Minority circuit (it's true when the minority of X, Y, and Z are true).
 
-Save your work in the `COMP1200-2016/Labs/lab2.circ`.
+Save your work in a file called `lab2.circ` in your `COMP1200-2016/Labs/` folder.
 
 === Submission
 

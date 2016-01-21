@@ -35,3 +35,14 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 1: Discrete math review]
 
+== January 15
+
+Multiplexers
+
+== January 20
+
+Multiplexers and ROMs to implement combinational logic.
+
+== January 21
+
+Lab 2: Circuit implementation

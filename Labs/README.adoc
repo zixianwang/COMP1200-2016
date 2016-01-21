@@ -97,3 +97,17 @@ git add lab1.txt
 git commit -m "Added lab 1 solution."
 git push origin master
 ----
+
+== Lab 2: Circuit implementation
+
+Implement these circuits from lab 1 in three different ways:
+
+. Window -> Combinational analysis
+. 8-1 MUX
+. ROM
+
+The circuits:
+
+. Let A and B be two 2-bit binary numbers (i.e., A1 A0 and B1 B0). Write out a truth table for A less than or equal to B. For example, 0b10 is less than or equal to 0b11, so the output for that row should be true.
+
+. Minority circuit (it's true when the minority of X, Y, and Z are true).

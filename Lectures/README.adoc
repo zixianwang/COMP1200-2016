@@ -60,7 +60,7 @@ Binary works reliably everywhere.
 [format="csv", options="header"]
 |===
 Binary, Number,0,1
-Boolean,Value             , False          , True     
+Boolean,Value             , False          , True
 English,Word              , No             , Yes
 Switch, Position          , Off            , On
 CPU,    Voltage           , Low            , High
@@ -234,9 +234,9 @@ image:http://lawrancej.github.io/COMP278-2014/images/binary-hands.svg[Impress yo
 
 * 4. Hey!
 * 25.
-* 31. 
+* 31.
 * 48. All right. :-)
-* 1023. 
+* 1023.
 
 === Binary -> Octal (and back)
 
@@ -322,8 +322,8 @@ To negate a binary two's complement number, work from right to left:
 [format="csv", options="header"]
 |===
 Place  , -128 , 64  , 32  , 16  , 8   , 4   , 2   , 1
-Bits   , 0    , 0   , 0   , 1   , 1   , 0   , 1   , 0 
-Negated, 1    , 1   , 1   , 0   , 0   , 1   , 1   , 0 
+Bits   , 0    , 0   , 0   , 1   , 1   , 0   , 1   , 0
+Negated, 1    , 1   , 1   , 0   , 0   , 1   , 1   , 0
 |===
 
 The signed byte 0b00011010 is 16 + 8 + 2 = 26 in decimal.
@@ -394,9 +394,9 @@ Complete this truth table.
 [format="csv", options="header"]
 |===
 a   , b   , If a is true then b; if a is false then a.
-0   , 0   , 
-0   , 1   , 
-1   , 0   , 
+0   , 0   ,
+0   , 1   ,
+1   , 0   ,
 1   , 1   ,
 |===
 
@@ -456,13 +456,13 @@ a   , b   , a'  , (a * b)' , (a + b)' , (a &oplus; b)'
 Logic expressions borrow notation from algebra.
 Thus, AND as a * b, since it corresponds to multiplication on single bits.
 OR is almost addition: 0 + 1 = 1, but 1 + 1 = 2, not 1,
-which is why we read a + b as "a OR b", not "a plus b". 
+which is why we read a + b as "a OR b", not "a plus b".
 Buffer may seem pointless, but it can delay a signal in a circuit.
 
 === Order of operations
 
 Logic operators also borrow order of operations from algebra.
-Remember PEMDAS? In logic, it's PNAO. 
+Remember PEMDAS? In logic, it's PNAO.
 
 [format="csv", options="header"]
 |===
@@ -474,7 +474,7 @@ Order     , "OR, NOR, XOR, XNOR"  , OR is almost addition
 |===
 
 In logic expression a+b*c', we have three operations,
-and we evaluate NOT c first, then AND that with b, and finally OR with a. 
+and we evaluate NOT c first, then AND that with b, and finally OR with a.
 
 === Venn Diagrams
 
@@ -512,7 +512,7 @@ In Logisim, draw this expression as a circuit: x'+y*z
 
 ==== Right
 image:http://lawrancej.github.io/COMP278-2014/images/logicly-diagram-right.png[What you should see]
- 
+
 ==== **Wrong**
 image:http://lawrancej.github.io/COMP278-2014/images/logicly-diagram-wrong.png[What you shouldn't see]
 
@@ -612,6 +612,8 @@ X*(Y + Z) = X*(Y+Z), Commutative law
 
 *Challenge*: Show (a * b)' * (a' + b) * (b' + b) = a'
 
+== January 15
+
 === Gray codes
 
 A Gray code (also known as a reflected binary code) is a way of encoding binary numbers so that every increment changes only a single bit.
@@ -667,3 +669,87 @@ Karnaugh maps:
 * can help you find simple logic expressions
 
 http://www.ee.calpoly.edu/media/uploads/resources/KarnaughExplorer_1.html[Lets examine Karnaugh maps in action]
+
+== January 20
+
+=== Function tables
+
+Function tables are a way to compact down a truth table by removing variable(s) from the input columns and placing it into the output function.
+Function tables are so called because the outputs are no longer merely just 0 or 1, but also **any function** of input variables.
+
+=== Example
+
+Here's the truth table for a &oplus; b:
+
+[format="csv", options="header"]
+|===
+a   , b   , a &oplus; b
+0   , 0   , 0
+0   , 1   , 1
+1   , 0   , 1
+1   , 1   , 0
+|===
+
+We can condense this down to this function table, by freeing variable b:
+
+[format="csv", options="header"]
+|===
+a   , a &oplus; b
+0   , b
+1   , b'
+|===
+
+Notice how when a is false, the output function is the same as b.
+When a is true, the output function is the inverse of b.
+
+=== Multiplexers
+
+Multiplexers (MUX) are circuits that redirect one of several inputs to a single output based on the value of the selector.
+That is, the output corresponds to the selected input.
+
+In this respect, multiplexers are equivalent to switch/case statements.
+
+----
+boolean Four1MUX(byte selector, boolean input0, boolean input1, boolean input2, boolean input3) {
+    switch(selector) {
+        case 0: return input0;
+        case 1: return input1;
+        case 2: return input2;
+        case 3: return input3;
+    }
+    return false;
+}
+----
+
+The function table for a 4-1 MUX (4 input, 1 output multiplexer) is as follows:
+
+[format="csv", options="header"]
+|===
+S1,S0,Output
+0,0,Input0
+0,1,Input1
+1,0,Input2
+1,1,Input3
+|===
+
+Select bits S1 and S0 represent the most and least significant bits of S (respectively) in binary.
+
+=== Truth/function table to multiplexer
+
+To implement a combination logic function with a multiplexer, the number of rows (excluding the header) in the truth/function table must equal the number of inputs to the multiplexer.
+If your truth table has more rows than the multiplexer has inputs, write out a function table with the same number of inputs as the multiplexer equivalent to the truth table.
+
+. Align the outputs of your table to the inputs of the multiplexer.
+. The select bits will correspond to the input variables.
+. Ta-da!
+
+=== Read Only Memory
+
+A ROM (Read-Only Memory) is analogous to an array.
+The ROM address is like an array index, and the ROM data for an address is like the value at an index.
+
+=== Truth table to ROM
+
+Treat all input bits in a truth table as a binary number that corresponds to ROM addresses (array indices).
+Treat all output bits in a truth table as a binary number that corresponds to ROM data.
+Effectively, a ROM acts as a lookup array for function implementation.

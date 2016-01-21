@@ -29,7 +29,7 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Logic expressio
 
 == January 13
 
-https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra, Gray codes, K-Maps]
+Introduction to Logisim
 
 == January 14
 
@@ -37,11 +37,11 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 1: Discrete mat
 
 == January 15
 
-Multiplexers
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra, Gray codes, K-Maps]
 
 == January 20
 
-Multiplexers and ROMs to implement combinational logic.
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Multiplexers and ROMs to implement combinational logic].
 
 == January 21
 

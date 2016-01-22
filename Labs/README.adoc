@@ -116,6 +116,8 @@ Save your work in a file called `lab2.circ` in your `COMP1200-2016/Labs/` folder
 
 === Submission
 
+Stage -> Commit -> Push
+
 ----
 cd ~/COMP1200-2016/Labs
 git add lab2.circ

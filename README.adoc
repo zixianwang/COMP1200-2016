@@ -45,4 +45,8 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Multiplexers an
 
 == January 21
 
-Lab 2: Circuit implementation
+https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 2: Circuit implementation]
+
+== January 22
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Sequential logic].

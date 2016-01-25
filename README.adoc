@@ -21,7 +21,7 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Number bases, c
 
 == January 8
 
-https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 0: Setup Git]
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[Lab 0: Setup git]
 
 == January 11
 
@@ -50,3 +50,7 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 2: Circuit impl
 == January 22
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Sequential logic].
+
+== January 25
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[State machines].

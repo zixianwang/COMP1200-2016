@@ -88,31 +88,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,110)" to="(340,110)"/>
     <wire from="(90,40)" to="(420,40)"/>
     <wire from="(330,80)" to="(460,80)"/>
-    <comp lib="4" loc="(290,120)" name="ROM">
-      <a name="addrWidth" val="3"/>
-      <a name="dataWidth" val="7"/>
-      <a name="contents">addr/data: 3 7
-0
-</a>
+    <comp lib="5" loc="(500,30)" name="LED"/>
+    <comp lib="0" loc="(250,230)" name="Clock"/>
+    <comp lib="5" loc="(500,70)" name="LED">
+      <a name="color" val="#00f000"/>
     </comp>
-    <comp lib="4" loc="(390,120)" name="Register">
-      <a name="width" val="3"/>
+    <comp lib="5" loc="(490,200)" name="LED">
+      <a name="color" val="#00f01a"/>
     </comp>
     <comp lib="2" loc="(450,200)" name="Decoder">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="5" loc="(500,70)" name="LED">
-      <a name="color" val="#00f000"/>
+    <comp lib="4" loc="(290,120)" name="ROM">
+      <a name="addrWidth" val="3"/>
+      <a name="dataWidth" val="7"/>
+      <a name="contents">addr/data: 3 7
+18 28 34 42 52 62 71 8
+</a>
     </comp>
+    <comp lib="5" loc="(490,180)" name="LED">
+      <a name="color" val="#eef000"/>
+    </comp>
+    <comp lib="5" loc="(490,160)" name="LED"/>
     <comp lib="2" loc="(460,70)" name="Decoder">
       <a name="select" val="2"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(250,230)" name="Clock"/>
-    <comp lib="5" loc="(490,160)" name="LED"/>
-    <comp lib="5" loc="(490,180)" name="LED">
-      <a name="color" val="#eef000"/>
+    <comp lib="5" loc="(500,50)" name="LED">
+      <a name="color" val="#f0ec00"/>
     </comp>
     <comp lib="0" loc="(310,130)" name="Splitter">
       <a name="fanout" val="3"/>
@@ -124,12 +128,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit5" val="2"/>
       <a name="bit6" val="2"/>
     </comp>
-    <comp lib="5" loc="(490,200)" name="LED">
-      <a name="color" val="#00f01a"/>
-    </comp>
-    <comp lib="5" loc="(500,30)" name="LED"/>
-    <comp lib="5" loc="(500,50)" name="LED">
-      <a name="color" val="#f0ec00"/>
+    <comp lib="4" loc="(390,120)" name="Register">
+      <a name="width" val="3"/>
     </comp>
   </circuit>
 </project>

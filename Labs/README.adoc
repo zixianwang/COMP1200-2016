@@ -100,7 +100,7 @@ image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[V
 . Answer these questions about the state machine above.
 .. List all possible inputs. How many do we have?
 .. List all possible states. How many do we have?
-.. The output bits are: vend and return nickel, return dime, return quarter, return all.
+.. The outputs are: vend and return money (0, 5, 10, 15, or 20 cents).
 .. How many bits for state will you need?
 .. How many input bits will you need?
 . Assign states to bits, inputs to bits and use a bit for each output.
@@ -108,5 +108,15 @@ image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[V
 . How many bits will we need for ROM address?
 . How many bits will we need for ROM data?
 . Finally, use a ROM to implement said thing.
+
+The table may look like this:
+
+[cols="5",format="csv"]
+|===
+state,input,next,vend,return
+000,00,000,0,000
+000,01,001,0,000
+...,...,...,...,...
+|===
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[How to submit work]

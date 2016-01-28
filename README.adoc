@@ -1,5 +1,7 @@
 = COMP1200: Computer Organization
 
+Midterm is on February 11.
+
 == Resources
 
 * http://sourceforge.net/projects/circuit/files/latest/download[Download Logisim]
@@ -54,3 +56,11 @@ https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Sequential logi
 == January 25
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[State machines].
+
+== January 27
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[State machine example]
+
+== January 28
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 3: State machine implementation]

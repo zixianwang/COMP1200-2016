@@ -100,7 +100,7 @@ image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[V
 . Answer these questions about the state machine above.
 .. List all possible inputs. How many do we have?
 .. List all possible states. How many do we have?
-.. The output bits are: vend and return.
+.. The output bits are: vend and return nickel, return dime, return quarter, return all.
 .. How many bits for state will you need?
 .. How many input bits will you need?
 . Assign states to bits, inputs to bits and use a bit for each output.

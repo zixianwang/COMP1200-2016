@@ -92,3 +92,21 @@ git add lab2.circ
 git commit -m "Lab 2 done"
 git push origin master
 ----
+
+== Lab 3: State machine implementation
+
+image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[Vending machine state transition diagram]
+
+. Answer these questions about the state machine above.
+.. List all possible inputs. How many do we have?
+.. List all possible states. How many do we have?
+.. The output bits are: vend and return.
+.. How many bits for state will you need?
+.. How many input bits will you need?
+. Assign states to bits, inputs to bits and use a bit for each output.
+. Write out a state-transition table.
+. How many bits will we need for ROM address?
+. How many bits will we need for ROM data?
+. Finally, use a ROM to implement said thing.
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[How to submit work]

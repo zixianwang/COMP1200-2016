@@ -810,11 +810,59 @@ The expression x'+x is always equal to 1, but the circuit implementing this isn'
 
 === Registers
 
-A register is a multiple-bit memory device.
-Registers are multiple flip-flops chained together to store things like integers, characters, and such.
-When you declare a variable, like int i = 0, the compiler allocates i to a register and sets the value of that register.
-Most CPUs have at least two registers in them.
+A register is a multiple-bit memory device composed of multiple flip-flops chained together to store things like integers, characters, and such.
+Code that declares a variable, like `int i = 0`, allocates `i` to a register and sets the value of that register.
+All CPUs have registers in them.
 
 == January 25: State machines
 
-== January 27: More about state machines
+A *finite state machine* consists of a finite number of states (nodes) and transitions (edges) among states.
+The state machine begins at the start state.
+External input or the passage of time triggers transitions.
+State machines may also produce output.
+The input and/or output labels each transition (edge).
+
+image:http://lawrancej.github.io/COMP1200-2016/Lectures/state-machine-legend.svg[State machine legend]
+
+== January 27: State machine example implementation
+
+A state machine can model orthogonal traffic lights at an intersection.
+Since traffic lights take no input (other than the passage of time), the input is omitted from the transition diagram.
+The output corresponds to the color of each of the two orthogonal traffic lights.
+
+image:http://lawrancej.github.io/COMP1200-2016/Lectures/traffic-light.svg[Traffic light state-transition diagram]
+
+We can convert the state diagram into a transition table:
+
+[cols="4",format="csv"]
+|===
+state,next,1,2
+0,1,green,red
+1,2,green,red
+2,3,yellow,red
+3,4,red,green
+4,5,red,green
+5,6,red,green
+6,7,red,yellow
+7,0,green,red
+|===
+
+To implement this into a ROM:
+
+. Use the state as the ROM address.
+. Assign bits to red (`00`), yellow (`01`) and green (`10`).
+The number of bits necessary is the log (base 2) of the number of possibilities.
+. Encode the next state and outputs into a number.
+
+[cols="5",format="csv"]
+|===
+state (ROM address),next,1,2,ROM data
+0,1,10,00,0x18
+1,2,10,00,0x28
+2,3,01,00,0x34
+3,4,00,10,0x42
+4,5,00,10,0x52
+5,6,00,10,0x62
+6,7,00,01,0x71
+7,0,10,00,0x08
+|===

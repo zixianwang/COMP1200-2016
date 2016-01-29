@@ -94,6 +94,12 @@ git push origin master
 
 == Lab 3: State machine implementation
 
+Implement a vending machine that accepts nickels, dimes and quarters.
+It sells only one thing, but it's worth 25 cents.
+
+The state-transition diagram (below) describes the vending machine.
+Implicitly, the absence of additional coins implies that we remain in the same state.
+
 image:http://lawrancej.github.io/COMP1200-2016/Labs/lab3.svg[Vending machine state transition diagram]
 
 . Answer these questions about the state machine above.

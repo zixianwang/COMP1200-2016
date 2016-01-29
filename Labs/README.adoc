@@ -15,8 +15,7 @@ touch lab1.txt
 ----
 
 NOTE: Use
-http://notepad-plus-plus.org/download/v6.6.9.html[a proper text editor],
-https://atom.io[such as this].
+https://atom.io[a proper text editor].
 
 === Number representation
 
@@ -95,7 +94,7 @@ git push origin master
 
 == Lab 3: State machine implementation
 
-image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[Vending machine state transition diagram]
+image:http://lawrancej.github.io/1200-2016/Labs/lab3.svg[Vending machine state transition diagram]
 
 . Answer these questions about the state machine above.
 .. List all possible inputs. How many do we have?
@@ -103,7 +102,7 @@ image:http://lawrancej.github.io/COMP278-2014/lab-instructions/lab5vending.svg[V
 .. The outputs are: vend and return money (0, 5, 10, 15, or 20 cents).
 .. How many bits for state will you need?
 .. How many input bits will you need?
-. Assign states to bits, inputs to bits and use a bit for each output.
+. Assign states to bits, inputs to bits and outputs to bits.
 . Write out a state-transition table.
 . How many bits will we need for ROM address?
 . How many bits will we need for ROM data?

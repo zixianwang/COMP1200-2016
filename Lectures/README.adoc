@@ -814,3 +814,7 @@ A register is a multiple-bit memory device.
 Registers are multiple flip-flops chained together to store things like integers, characters, and such.
 When you declare a variable, like int i = 0, the compiler allocates i to a register and sets the value of that register.
 Most CPUs have at least two registers in them.
+
+== January 25: State machines
+
+== January 27: More about state machines

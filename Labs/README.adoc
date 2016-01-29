@@ -94,7 +94,7 @@ git push origin master
 
 == Lab 3: State machine implementation
 
-image:http://lawrancej.github.io/1200-2016/Labs/lab3.svg[Vending machine state transition diagram]
+image:http://lawrancej.github.io/COMP1200-2016/Labs/lab3.svg[Vending machine state transition diagram]
 
 . Answer these questions about the state machine above.
 .. List all possible inputs. How many do we have?

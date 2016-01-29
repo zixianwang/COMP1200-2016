@@ -1,21 +1,24 @@
 = Lab instructions
 
-== January 8: Lab 0
+Unless stated otherwise:
+
+* All labs are due before the start of the next lab.
+* Save your work in your repo `~/COMP1200-2016`
+
+== Lab 0: Setup Git
 
 https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[Install git and run starterupper]
 
-== Lab 1: Discrete math review?
+== Lab 1: Discrete math review
 
-Lab 1. *Due*: By next Thursday.
-Save your work in a file called `lab1.txt` in your repo.
+Save your work in a file called `lab1.txt`.
 
 ----
 cd ~/COMP1200-2016
 touch lab1.txt
 ----
 
-NOTE: Use
-https://atom.io[a proper text editor].
+NOTE: Use https://atom.io[a proper text editor].
 
 === Number representation
 
@@ -81,16 +84,7 @@ The circuits:
 
 Save your work in a file called `lab2.circ` in your `COMP1200-2016/Labs/` folder.
 
-=== Submission
-
-Stage -> Commit -> Push
-
-----
-cd ~/COMP1200-2016/Labs
-git add lab2.circ
-git commit -m "Lab 2 done"
-git push origin master
-----
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[How to submit work]
 
 == Lab 3: State machine implementation
 

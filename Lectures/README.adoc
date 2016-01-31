@@ -866,3 +866,9 @@ state (ROM address),next,1,2,ROM data
 6,7,00,01,0x71
 7,0,10,00,0x08
 |===
+
+== January 29: State machines
+
+image:http://lawrancej.github.io/COMP1200-2016/Lectures/random-state-machine.svg[Random state machine]
+
+https://docs.google.com/spreadsheets/d/1k3oJ2vz-r8oahjXeXzSUPlxBUk9rlUNBdR2-pGXjyP8/edit?usp=sharing[Spreadsheet] for the state machine above.

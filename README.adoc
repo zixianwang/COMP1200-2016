@@ -1,5 +1,7 @@
 = COMP1200: Computer Organization
 
+Midterm is on February 11.
+
 == Resources
 
 * http://sourceforge.net/projects/circuit/files/latest/download[Download Logisim]
@@ -11,27 +13,20 @@ cd ~/Downloads
 java -jar Logisim.app/Contents/Resources/Java/logisim.jar
 ----
 
-== January 6
+== Agenda
 
-https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Introduce yourself, About this course]
-
-== January 7
-
-https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Number bases, conversions]
-
-== January 8
-
-https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 0: Setup Git]
-
-== January 11
-
-https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Logic expressions, truth tables]
-
-== January 13
-
-https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra, Gray codes, K-Maps]
-
-== January 14
-
-https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 1: Discrete math review]
-
+[horizontal]
+January 6:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Introduce yourself, About this course]
+January 7:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Number bases, conversions]
+January 8:: https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[Lab 0: Setup git]
+January 11:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Logic expressions, truth tables]
+January 13:: Introduction to Logisim
+January 14:: https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 1: Discrete math review]
+January 15:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Boolean algebra, Gray codes, K-Maps]
+January 20:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Multiplexers and ROMs to implement combinational logic].
+January 21:: https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 2: Circuit implementation]
+January 22:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Sequential logic].
+January 25:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[State machines].
+January 27:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[State machine example]
+January 28:: https://github.com/lawrancej/COMP1200-2016/blob/master/Labs/[Lab 3: State machine implementation]
+January 29:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[More state machines].

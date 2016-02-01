@@ -1,54 +1,24 @@
 = Lab instructions
 
-== January 8: Lab 0
+Unless stated otherwise:
 
-=== Install Git and frontends
+* All labs are due before the start of the next lab.
+* Save your work in your repo `~/COMP1200-2016`
 
-Windows:: https://git-scm.com/download/win[Install Git for Windows]
-+
-https://github.com/gitextensions/gitextensions/releases/latest[Install Git Extensions]
-+
-NOTE: Select KDiff, and *choose OpenSSH* (not PuTTY); otherwise,
-stick to the default settings.
-+
-image:http://lawrancej.github.io/starterupper/images/what2install.png[Install KDiff]
-image:http://lawrancej.github.io/starterupper/images/openssh.png[Choose OpenSSH]
+== Lab 0: Setup Git
 
-Mac OS X:: http://git-scm.com/download/mac[Install git from here]
-+
-You may need to go to Apple menu -> System Preferences... -> Security & Privacy -> Open Anyway if you get an error.
-+
-http://rowanj.github.io/gitx/[Install GitX-dev]
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[Install git and run starterupper]
 
-Linux:: http://git-scm.com/download/linux[Install git] using your package manager.
-+
-NOTE: Don't forget to use +sudo+ with your package manager.
+== Lab 1: Discrete math review
 
-=== Run starterupper
-
-Starterupper sets up git and project hosting for this class;
-it is safe to run even if you already have git and SSH keys set up on your machine.
-
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below. To get into terminal on the Mac, it's Finder -> Applications -> Utilities -> Terminal.
-Press `Shift-Insert` to paste in Git Bash.
-
-----
-curl https://raw.githubusercontent.com/lawrancej/COMP1200-2016/master/main.sh | bash
-----
-
-== Lab 1: Discrete math review?
-
-Lab 1. *Due*: By next Thursday.
-Save your work in a file called `lab1.txt` in your repo.
+Save your work in a file called `lab1.txt`.
 
 ----
 cd ~/COMP1200-2016
 touch lab1.txt
 ----
 
-NOTE: Use
-http://notepad-plus-plus.org/download/v6.6.9.html[a proper text editor],
-https://atom.io[such as this].
+NOTE: Use https://atom.io[a proper text editor].
 
 === Number representation
 
@@ -97,3 +67,55 @@ git add lab1.txt
 git commit -m "Added lab 1 solution."
 git push origin master
 ----
+
+== Lab 2: Circuit implementation
+
+Implement these circuits from lab 1 in three different ways:
+
+. Window -> Combinational analysis
+. 8-1 MUX
+. ROM
+
+The circuits:
+
+. Let A and B be two 2-bit binary numbers (i.e., A1 A0 and B1 B0). Write out a truth table for A less than or equal to B. For example, 0b10 is less than or equal to 0b11, so the output for that row should be true.
+
+. Minority circuit (it's true when the minority of inputs X, Y, and Z are true, or equivalently, most inputs are false).
+
+Save your work in a file called `lab2.circ` in your `COMP1200-2016/Labs/` folder.
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[How to submit work]
+
+== Lab 3: State machine implementation
+
+Implement a vending machine that accepts nickels, dimes and quarters.
+It sells only one thing, but it's worth 25 cents.
+
+The state-transition diagram (below) describes the vending machine.
+Implicitly, the absence of additional coins implies that we remain in the same state.
+
+image:http://lawrancej.github.io/COMP1200-2016/Labs/lab3.svg[Vending machine state transition diagram]
+
+. Answer these questions about the state machine above.
+.. List all possible inputs. How many do we have?
+.. List all possible states. How many do we have?
+.. The outputs are: vend and return money (0, 5, 10, 15, or 20 cents).
+.. How many bits for state will you need?
+.. How many input bits will you need?
+. Assign states to bits, inputs to bits and outputs to bits.
+. Write out a state-transition table.
+. How many bits will we need for ROM address?
+. How many bits will we need for ROM data?
+. Finally, use a ROM to implement said thing.
+
+The table may look like this:
+
+[cols="5",format="csv"]
+|===
+state,input,next,vend,return
+000,00,000,0,000
+000,01,001,0,000
+...,...,...,...,...
+|===
+
+https://github.com/lawrancej/COMP1200-2016/blob/master/Git.adoc[How to submit work]

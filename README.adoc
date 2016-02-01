@@ -13,6 +13,8 @@ cd ~/Downloads
 java -jar Logisim.app/Contents/Resources/Java/logisim.jar
 ----
 
+== Agenda
+
 [horizontal]
 January 6:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Introduce yourself, About this course]
 January 7:: https://github.com/lawrancej/COMP1200-2016/blob/master/Lectures/[Number bases, conversions]

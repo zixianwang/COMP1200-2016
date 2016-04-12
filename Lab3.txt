@@ -1,0 +1,40 @@
+1)
+
+i. nothing,nickel,dime,quarter 4 inputs
+ii. 0 cent(state 0), 5 cent(state 1), 10 cent(state 2), 15 cent(state 3), 20 cent(state 4), 25 cent(state 5), 6 states
+iii. vend and return money(0,5,10,15,20)
+iv. 3 bits
+v. 2 bits
+
+2)
+
+state 0 = 000	nothing = 00   vend = 0 or 1 return money: 0 = 000
+state 1 = 001   nickel = 01    							   5 = 001
+state 2 = 010   dime = 10							10 = 010
+state 3 = 011   quarter = 11							   15 = 011
+state 4 = 100									20 = 100
+state 5 = 101
+
+
+3)
+
+
+state(3bits) |  input(2bits)	|  next(3bits)  |  vend(1bit)  |  return(3bits)
+000		00			000		0		000
+000		01			001		0		000
+000		10			010		0		000
+000		11			011		1		000
+001		00			001		0		000
+001		01			010		0		000
+001		10			011		0		000
+001		11			111		1		001
+
+
+4)
+
+ROM address = 5 bits
+
+5)
+
+Rom data = 7 bits
+
